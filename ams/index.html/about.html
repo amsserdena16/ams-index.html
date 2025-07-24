@@ -34,6 +34,10 @@
       justify-content: space-between;
       align-items: center;
       z-index: 10;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
     }
 
     .nav-left img {
@@ -55,7 +59,7 @@
       flex: 1;
       display: flex;
       justify-content: center;
-      padding: 2rem 1rem;
+      padding: 6rem 1rem 2rem; /* Add top padding to prevent content from hiding behind navbar */
     }
 
     .container {
@@ -94,7 +98,7 @@
     p {
       font-size: 1.1rem;
       line-height: 1.6;
-      color: var(--black); /* changed from var(--gray) to var(--black) */
+      color: var(--black);
     }
 
     footer {
@@ -191,20 +195,20 @@
 </head>
 <body>
   <nav>
-     <div class="nav-left">
+    <div class="nav-left">
       <img id="logo" src="/index.html/images/amslogo.png" alt="Logo">
     </div>
     <div class="hamburger" onclick="toggleNav()">
       <span></span><span></span><span></span>
     </div>
     <div class="nav-right" id="navLinks">
-      <a href="home.html">Home</a>
-      <a href="about.html">About Me</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="certifications.html">Certifications</a>
-      <a href="competitions.html">Competitions</a>
-      <a href="contact.html">Contact</a>
+      <a href="/index.html/home.html">Home</a>
+      <a href="/index.html/about.html">About Me</a>
+      <a href="/index.html/skills.html">Skills</a>
+      <a href="/index.html/projects.html">Projects</a>
+      <a href="/index.html/certifications.html">Certifications</a>
+      <a href="/index.html/competitions.html">Competitions</a>
+      <a href="/index.html/contact.html">Contact</a>
     </div>
   </nav>
 
@@ -223,7 +227,7 @@
         </div>
 
         <div class="profile-photo">
-          <img src="images/ams(2).png" alt="Anna Mae Serdeña Portrait" />
+          <img src="/index.html/images/ams(2).png" alt="Anna Mae Serdeña Portrait" />
         </div>
       </div>
 
